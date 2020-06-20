@@ -13,7 +13,9 @@ jobs:
     - uses: actions/stale@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'Stale issue message'
-        stale-pr-message: 'Stale pull request message'
-        stale-issue-label: 'no-issue-activity'
-        stale-pr-label: 'no-pr-activity'
+        stale-issue-message: 'A friendly reminder that this issue had no activity for 30 days'
+        stale-pr-message: 'A friendly reminder that this PR had no activity for 60 days'
+        stale-issue-label: 'stale-issue'
+        stale-pr-label: 'stale-pr'
+        days-before-stale: 30
+        days-before-close: 60
