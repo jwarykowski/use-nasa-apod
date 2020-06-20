@@ -1,13 +1,19 @@
 {
-  "name": "use-nasa-apod",
+  "name": "@jwarykowski/use-nasa-apod",
   "version": "0.0.1",
   "repository": "git@github.com:jwarykowski/use-nasa-apod.git",
   "author": "Jonathan Warykowski <jonathan.warykowski@gmail.com>",
   "description": "React hook for the NASA astronomy picture of the day",
   "main": "dist/index.js",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react": "^16.13.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.10.3",
