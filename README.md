@@ -9,5 +9,5 @@ React hook for the NASA astronomy picture of the day
 const apiUrl = 'https://test.com' // defaults to 'https://api.nasa.gov/planetary/apod'
 const apiKey = 'secretKey'
 
-const data = useNasaAPOD({ apiKey, apiUrl })
+const { data, error, isResolving } = useNasaAPOD({ apiKey, apiUrl })
 ```
